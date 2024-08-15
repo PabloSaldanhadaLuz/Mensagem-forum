@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fórum de Discussão</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+
+        <h1>Mensagem</h1>
+        
+        <!-- Formulário para enviar mensagens -->
+        <form id="messageForm">
+            <textarea id="messageInput" class="caixa-texto" placeholder="Digite sua mensagem..." required></textarea>
+            <input type="submit" value="Enviar">
+        </form>
+        
+        <!-- Área para exibir mensagens -->
+        <div id="messageBoard">
+            <!-- As mensagens serão adicionadas dinamicamente aqui -->
+        </div>
+    </div>
+ 
+    <!-- Script para manipulação das mensagens -->
+    <script src="script.js"></script>
+</body>
+</html>
