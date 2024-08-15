@@ -22,19 +22,9 @@ document.addEventListener('DOMContentLoaded', function() {
         const messageContent = document.createElement('p');
         messageContent.textContent = messageText;
 
-        const messageFooter = document.createElement('small');
-        messageFooter.textContent = '' + getCurrentDateTime();
-
         message.appendChild(messageContent);
-        message.appendChild(messageFooter);
 
         return message;
     }
 
-    function getCurrentDateTime() {
-        const now = new Date();
-        const date = now.toLocaleDateString('pt-BR');
-        const time = now.toLocaleTimeString('pt-BR');
-        return `${date} às ${time}`;
-    }
 });
